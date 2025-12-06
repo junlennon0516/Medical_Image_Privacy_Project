@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Client_Hospital/Client_Hospital.vcxproj" Id="09ef0041-00bb-4bf0-a102-c7410db8c06b" />
+  <Project Path="Server_AI/Server_AI.vcxproj" Id="3051439a-b098-4a98-b63e-241118b4af2a" />
+</Solution>
