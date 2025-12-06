@@ -28,7 +28,7 @@ Please place 'weights.txt' and 'bias.txt' here
 [Server] Cleaning up Shared_Channel...
 [Server] AI Server is running... Waiting for KEY....
 ```
-이 메시지가 보이면 서버가 대기 중입니다. **이 창은 닫지 마세요!**
+이 메시지가 보이면 서버가 대기 중입니다. 🚨**이 창은 닫지 마세요!**
 
 #### 2단계: 웹 앱 실행 (두 번째 터미널)
 ```bash
