@@ -2,6 +2,8 @@
 
 ## 📋 사전 준비사항
 
+** 이미 모델 학습이 완료된 상태이므로 실행할 필요 없음**
+
 1. **Python 패키지 설치**
    ```bash
    pip install streamlit pandas numpy scikit-learn
