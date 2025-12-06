@@ -63,23 +63,6 @@ streamlit run result_app.py
   - 폐렴 이미지: `test_images/test_00000_pneumonia.png`
 - 웹 앱의 "이미지 업로드" 섹션에서 이 파일들을 선택하여 테스트할 수 있습니다.
 
-### 방법 2: 수동 실행 (디버깅용)
-
-#### 1단계: 서버 실행
-```bash
-x64\Release\Server_AI.exe
-```
-
-#### 2단계: 클라이언트 실행 (별도 터미널)
-```bash
-x64\Release\Client_Hospital.exe
-```
-
-#### 3단계: 웹 앱 실행 (별도 터미널)
-```bash
-streamlit run result_app.py
-```
-
 ## ✅ 실행 확인 체크리스트
 
 - [ ] `weights.txt`와 `bias.txt`가 루트 디렉토리에 있음
@@ -109,6 +92,7 @@ streamlit run result_app.py
    ```bash
    python Server_AI/train_model.py
    ```
+### 이미 모델 학습이 완료된 상태이므로 실행할 필요 없음
 
 2. **서버 실행** (항상 먼저 실행)
    ```bash
