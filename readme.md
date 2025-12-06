@@ -1,27 +1,10 @@
 # 🏥 의료 프라이버시 보존 AI 시스템 실행 가이드
 
-## 📋 사전 준비사항
-
-### 이미 모델 학습이 완료된 상태이므로 실행할 필요 없음
-
-1. **Python 패키지 설치**
-   ```bash
-   pip install streamlit pandas numpy scikit-learn
-   ```
-
-2. **모델 학습 (최초 1회 또는 모델 업데이트 시)**
-   ```bash
-   cd Server_AI
-   python train_model.py
-   cd ..
-   ```
-   - `weights.txt`와 `bias.txt` 파일이 루트 디렉토리에 생성됩니다.
-
 ## 🚀 실행 방법
 
 ### 방법 1: 전체 시스템 실행 (권장)
 
-**3개의 터미널/명령 프롬프트 창을 열어주세요:**
+**2개의 터미널/명령 프롬프트 창을 열어주세요:**
 
 #### 1단계: 서버 실행 (첫 번째 터미널)
 ```bash
@@ -58,7 +41,7 @@ streamlit run result_app.py
 - 웹 앱에서 이미지를 업로드하고 "🔒 암호화 진단 요청" 버튼을 클릭하면 자동으로 클라이언트가 실행됩니다.
 
 **💡 테스트 이미지 사용:**
-- `test_images` 폴더에 있는 테스트 이미지를 사용할 수 있습니다:
+- 🚨`test_images` 폴더에 있는 테스트 이미지를 사용할 수 있습니다:
   - 정상 이미지: `test_images/test_00001_normal.png`
   - 폐렴 이미지: `test_images/test_00000_pneumonia.png`
 - 웹 앱의 "이미지 업로드" 섹션에서 이 파일들을 선택하여 테스트할 수 있습니다.
@@ -88,23 +71,17 @@ streamlit run result_app.py
 
 ## 📝 실행 순서 요약
 
-1. **모델 학습** (최초 1회)
-   ```bash
-   python Server_AI/train_model.py
-   ```
-### 이미 모델 학습이 완료된 상태이므로 실행할 필요 없음
-
-2. **서버 실행** (항상 먼저 실행)
+1. **서버 실행** (항상 먼저 실행)
    ```bash
    x64\Release\Server_AI.exe
    ```
 
-3. **웹 앱 실행**
+2. **웹 앱 실행**
    ```bash
    streamlit run result_app.py
    ```
 
-4. **웹 앱에서 이미지 업로드 후 "🔒 암호화 진단 요청" 클릭**
+3. **웹 앱에서 이미지 업로드 후 "🔒 암호화 진단 요청" 클릭**
    - `test_images` 폴더에 있는 테스트 이미지 사용 가능:
      - 정상: `test_images/test_00001_normal.png`
      - 폐렴: `test_images/test_00000_pneumonia.png`
@@ -120,4 +97,4 @@ x64\Release\Server_AI.exe
 streamlit run result_app.py
 ```
 
-그 다음 웹 브라우저에서 데이터 입력!
+그 다음 웹 브라우저에서 이미지 upload!
